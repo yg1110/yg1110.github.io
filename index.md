@@ -1,36 +1,43 @@
-## 19.12.05
+# 19.12.05
 블로그 시작
 
-### Markdown
+### 해보고싶은 프로젝트들
+1. node.js + Vue 개인프로젝트
+개발인원 : 개인
+역할 & 개발언어 : 풀스택(mysql + mongodb + Vue + node.js + 가능하다면 레디스와 엔진엑스까지 사용해볼 예정)
+개발내용
+```
+# 프론트
+Vue
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# 백
+기본적인건 노드로(Auoth2.0, RESTFull패턴, JWT토큰)
+실시간통신은 소켓IO 또는 에이젝스
+전부다 만들고 엔진엑스로 분산처리
 
-```markdown
-Syntax highlighted code block
+# DB
+레디스 (캐시)
+몽고DB (장바구니)
+sql (유저정보)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# 참고사항
+[github](https://github.com/yg1110/nodejs-mongodb)
+예전에 하던 프로젝트 복습 및 참고 + ejs를 Vue로 바꾸기
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+2. 실시간검색 빅데이터를 이용한 프로젝트
+개발인원 : 3명(더추가될수도)
+역할 & 개발언어 : 백엔드(Spring)
+개발내용
+```
+주제구체화 및 아이디어 구상필요
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yg1110/yg1110.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-[link됩니까?](https://yg1110.github.io/backup)
+3. 유튜브 동영상을 여러 유저와 함께 듣고 채팅하는 웹 개발
+개발기간 : 19.12.09 ~ 미정
+개발인원 : 2명
+역할 & 개발언어 : 백엔드(Spring, node.js)
+개발내용
+```
+주제구체화 및 아이디어 구상필요
+```
