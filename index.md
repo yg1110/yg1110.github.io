@@ -3,18 +3,16 @@
 ### 역할 & 개발언어 : 풀스택(mysql + mongodb + Vue + node.js + 가능하다면 레디스와 엔진엑스까지 사용해볼 예정)
 ### 개발내용
 ```markdown
-1. 프론트
-Vue
+1. Vue + Node.js(SoketIO) => 채팅서버
 
-2. 백
-기본적인건 노드로(Auoth2.0, RESTFull패턴, JWT토큰)
-실시간통신은 소켓IO 또는 에이젝스
-전부다 만들고 엔진엑스로 분산처리
+2. Spring + jsp + Mysql
+=> 로그인 : SNS로그인(Auoth2.0), 모바일 인증(JWT토큰), 아이디저장(Redis)
+로그아웃, 회원가입, 회원수정
 
-3. DB
-레디스 (캐시)
-몽고DB (장바구니)
-sql (유저정보)
+3. MongoDB + Node.js + ejs(또는 Vue, jsp) => 친구추가 기능, SNS기능
+
+4. Nginx => 분산처리
+유저는 80번포트로 들어와서 5001, 5002등등으로 나눠줘서 들어가는 기능
 ```
 ### 참고사항
 [github](https://github.com/yg1110/nodejs-mongodb)
