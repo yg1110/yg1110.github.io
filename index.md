@@ -5,14 +5,17 @@
 ```markdown
 1. Vue + Node.js(SoketIO) => 채팅서버
 
-2. Spring + jsp + Mysql
-=> 로그인 : SNS로그인(Auoth2.0), 모바일 인증(JWT토큰), 아이디저장(Redis)
+2. SpringBoot + jsp + Mysql
+=> 로그인 : SNS로그인(Auoth2.0), 모바일 인증(JWT토큰)
 로그아웃, 회원가입, 회원수정
 
 3. MongoDB + Node.js + ejs(또는 Vue, jsp) => 친구추가 기능, SNS기능
 
 4. Nginx => 분산처리
 유저는 80번포트로 들어와서 5001, 5002등등으로 나눠줘서 들어가는 기능
+
+Node + SocketIO(채팅) <-Radis-> SpringBoot + Mysql <-Radis-> Node + MongoDB(친구추가 + SNS)
+통신들을 레디스를 이용해서 해보자!
 ```
 ### 참고사항
 [github](https://github.com/yg1110/nodejs-mongodb)
