@@ -19,8 +19,11 @@
 
 6. 친구추가, SNS기능
 
-7. Nginx(분산처리)
-유저는 80번포트로 들어와서 5001, 5002등등으로 나눠줘서 들어가는 기능
+7. RabbitMQ
+   - 데이터통신
+   - https://kamang-it.tistory.com/entry/AMQPRabbitMQRabbitMQ%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95-1
+   
+8. Nginx(분산처리)
 ```
 
 # 퍼블리싱
