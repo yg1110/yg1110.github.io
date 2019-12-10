@@ -1,33 +1,32 @@
-# node.js + Vue 개인프로젝트
-### 개발인원 : 개인
-### 역할 & 개발언어 : 풀스택(mysql + mongodb + Vue + node.js + 가능하다면 레디스와 엔진엑스까지 사용해볼 예정)
+# 개인용 블로그 만들기
+### 개발언어 : SpringBoot, Redis, Mysql, Mongodb, NginX, Node.js, BootStrap4, HTML, CSS, JS, AJAX
+### 사용기술 : Auoth2.0, JWT토큰, Socket.io
 ### 개발내용
 ```markdown
-1. Vue + Node.js(SoketIO) => 채팅서버
+1. 게시판 CRUD, 새글 알림은 오른쪽 팝업으로
+   - DB는 mongoose
+   
+2. 댓글, 대댓글기능, New, 답글여부(문자)
 
-2. SpringBoot + jsp + Mysql
-=> 로그인 : SNS로그인(Auoth2.0), 모바일 인증(JWT토큰)
-로그아웃, 회원가입, 회원수정
+3. 유저 로그인, 회원가입, 아이디찾기, 비밀번호암호화, 비밀번호찾기, 프로필 수정, 아이디저장
+   - SNS로그인(Auoth2.0), 모바일 인증(JWT토큰)
+   - DB는 Mysql
+   - 캐시 & 세션은 Redis
+   
+4. 파일업로드, 다운기능
 
-3. MongoDB + Node.js + ejs(또는 Vue, jsp) => 친구추가 기능, SNS기능
+5. 멀티채팅, 1:1채팅, 채팅룸 기능
 
-4. Nginx => 분산처리
+6. 친구추가, SNS기능
+
+7. Nginx(분산처리)
 유저는 80번포트로 들어와서 5001, 5002등등으로 나눠줘서 들어가는 기능
-
-Node + SocketIO(채팅) <-Radis-> SpringBoot + Mysql <-Radis-> Node + MongoDB(친구추가 + SNS)
-통신들을 레디스를 이용해서 해보자!
 ```
-### 참고사항
-[github](https://github.com/yg1110/nodejs-mongodb)
-예전에 하던 프로젝트 복습 및 참고 + ejs를 Vue로 바꾸기
 
-
-# 실시간검색 빅데이터를 이용한 프로젝트
-### 개발인원 : 3명(더추가될수도)
-### 역할 & 개발언어 : 백엔드(Spring)
+# 퍼블리싱
 ### 개발내용
 ```markdown
-주제구체화 및 아이디어 구상필요
+페이지 모방 퍼블리싱(한솔홈데코)
 ```
 
 
@@ -36,5 +35,5 @@ Node + SocketIO(채팅) <-Radis-> SpringBoot + Mysql <-Radis-> Node + MongoDB(�
 ### 역할 & 개발언어 : 백엔드(Spring, node.js)
 ### 개발내용
 ```markdown
-주제구체화 및 아이디어 구상필요
+12.12 주제 구체화예정
 ```
