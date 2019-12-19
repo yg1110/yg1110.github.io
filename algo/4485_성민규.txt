@@ -1,0 +1,68 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main_≥Ïªˆø ¿ª¿‘¿∫æ÷∞°¡©¥Ÿ¡ˆ {
+	static int[][] map;
+	static int[][] path;
+	static int[] di = { -1, 1, 0, 0 };
+	static int[] dj = { 0, 0, -1, 1 };
+	static int N;
+	static Queue<Point> queue;
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		int tc = 1;
+		while (true) {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			N = Integer.parseInt(br.readLine());
+			if (N == 0) {
+				break;
+			}
+			map = new int[N][N];
+			path = new int[N][N];
+			queue = new LinkedList<>();
+			for (int i = 0; i < N; i++) {
+				String[] values = br.readLine().split(" ");
+				for (int j = 0; j < N; j++) {
+					map[i][j] = Integer.parseInt(values[j]);
+				}
+			}
+			queue.add(new Point(0, 0));
+			path[0][0] = map[0][0];
+			bfs();
+			
+			System.out.println("Problem " + tc + ": "+path[N - 1][N - 1]);
+			tc++;
+		}
+	}
+
+	public static void bfs() {
+		while (!queue.isEmpty()) {
+			Point tmp = queue.poll();
+			for (int d = 0; d < 4; d++) {
+				int diri = tmp.i + di[d];
+				int dirj = tmp.j + dj[d];
+				if (diri < 0 || diri >= N || dirj < 0 || dirj >= N) {
+					continue;
+				}
+				int newPath = path[tmp.i][tmp.j] + map[diri][dirj];
+				if (path[diri][dirj] != 0 && path[diri][dirj] < newPath) { // ±‚¡∏ πÊπÆ ∞Ê∑Œ∞° ¥ı ¬™¿ª ∂º
+					continue;
+				}
+				queue.add(new Point(diri, dirj));
+				path[diri][dirj] = newPath;
+			}
+		}
+	}
+
+	static class Point {
+		int i, j;
+
+		Point(int i, int j) {
+			this.i = i;
+			this.j = j;
+		}
+	}
+}
