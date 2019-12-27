@@ -1,5 +1,5 @@
 # 개인용 블로그 만들기
-### 개발언어 : SpringBoot, Redis, Mysql, Mongodb, NginX, Node.js, BootStrap4, HTML, CSS, JS, AJAX
+### 개발언어 : SpringBoot, Redis, Mysql, Mongodb, NginX, Node.js, BootStrap, HTML, CSS, JS, AJAX
 ### 사용기술 : Auoth2.0, JWT토큰, Socket.io
 ### 개발내용
 ```markdown
@@ -20,6 +20,8 @@
    - 데이터통신
    
 8. Nginx(분산처리)
+
+9. Security + jwt + Auoth2.0
 ```
 
 # 퍼블리싱
